@@ -1,0 +1,54 @@
+.panel.initial {
+
+  height: 100vh;
+  position: relative;
+
+  .ledge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-image: url(/assets/ledge.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .position-button {
+    position: absolute;
+    top: 53%;
+    left: 3%;
+  }
+
+  $susie_face_straight: -336px 0px;
+  $susie_face-right: 0px 0px;
+  $susie_face_left: 0 -186px;
+  $susie_happy: -671px 0;
+  $susie_angry: -840px 0;
+  $susie_shadow: -336px -186px;
+  $susie_parachuting: -1008px -86px;
+
+  $susie_bounce_left: -503px -186px;
+  $susie_bounce_right: -503px 0;
+
+  $susie_offset_top: 95%;
+  $susie_offset_left: 20%;
+
+  .susie {
+    width: 104px;
+    height: 169px;
+    bottom: 48%;
+    left: 5%;
+    position: fixed;
+    z-index: 999;
+    background: url(/assets/susie-sprite-sheet.png);
+    background-position: $susie_happy;
+    &.at-contact {
+      bottom: 1%;
+      z-index: 1;
+    }
+    &.parachuting {
+      height: 268px;
+      background-position: $susie_parachuting;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<div class="app-header span-12">
+
+  <!-- <img  src="/assets/profile-character-2.svg" 
+        class="avatar 
+              inline-block 
+              vertical-align-middle 
+              margin-r" /> -->
+  <h1 class="make-h1-bigger inline-block">Aimée Lally</h1>
+
+  <div class="pull-right">
+    <mat-menu #appMenu="matMenu">
+      <a href="#d3" mat-menu-item>Data Visualisation</a>
+      <a href="#fancy-forms" mat-menu-item>Fancy Forms</a>
+      <a href="#caramello-caser" mat-menu-item>Caramello Caser</a>
+      <a href="#contact" mat-menu-item>Contact</a>
+    </mat-menu>
+
+    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</div>

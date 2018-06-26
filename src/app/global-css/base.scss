@@ -1,0 +1,65 @@
+// NODE MODULES
+@import '~modularscale-sass/stylesheets/modularscale';
+//@import '~bootstrap/scss/bootstrap';
+
+
+// @import '~fancy-forms/styles/fancy-forms/variables-for-fancy-forms';
+@import '~fancy-forms/styles/fancy-forms/base';
+$ff-color-primary: #F90093;
+$ff-color-answer-correct: #70C1B3;
+$ff-color-answer-incorrect: #ff6666;
+$ff-color-bg: #ffffff;
+$ff-color-initial-state: #a1a1a1;
+
+
+//ANGULAR MATERIAL CUSTOM THEME
+@import '~@angular/material/theming';
+@include mat-core();
+
+$my-app-primary: mat-palette($mat-pink, 500, 900, A100);
+$my-app-accent:  mat-palette($mat-deep-purple, 500, 900, A100);
+$my-app-warn:    mat-palette($mat-deep-orange);
+
+$my-app-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+@include angular-material-theme($my-app-theme);
+
+// .alternate-theme {
+//   $alternate-primary: mat-palette($mat-light-blue);
+//   $alternate-accent:  mat-palette($mat-yellow, 400);
+
+//   $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent);
+
+//   @include angular-material-theme($alternate-theme);
+// }
+
+
+// MODULES
+@import 'modules/mixins',
+				'modules/variables',
+        'modules/animation/hover';
+
+// PARTIALS
+@import 'partials/reset',
+        'partials/animation',
+        'partials/d3',
+        'partials/global',
+        'partials/buttons',
+				'partials/grid',
+        'partials/layout',
+        'partials/font',
+        'partials/speech-bubbles';
+
+@import '../header/header.component.scss';
+
+
+// DIRECTIVES
+//@import '../directives/speech-bubble/speech-bubble';         
+			
+// VIEWS
+// @import '../views/landing-page/landing-page',
+//         '../views/interactive-cv/interactive-cv';
+
+
+
+

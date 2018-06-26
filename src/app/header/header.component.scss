@@ -1,0 +1,42 @@
+.app-header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 2em 5% 0 5%;
+  //background: $color-3;
+  //height: 150px;
+  color: $font-on-dark-bg;
+
+  .aimee-avatar-container {
+    width: 40%;
+    height: 100%;
+  }
+  .avatar {
+    height: 7em;
+  }
+
+  .aimee-avatar {
+    background: url(../../assets/profile-character-2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60%;
+    background-position: center;
+  }
+
+  .make-h1-bigger {
+    vertical-align: bottom;
+  }
+
+
+  
+  // @media (max-width: 700px){
+  //   $header-height: 150px;
+  //   height:$header-height;
+  // }
+  // @media (min-width: 701px){
+  //   $header-height: 100px;
+  //   height:$header-height;
+  // }
+
+  
+}

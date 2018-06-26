@@ -1,0 +1,116 @@
+.panel.contact {
+
+  height: 100vh;
+  position: relative;
+
+  .ledge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-image: url(/assets/ledge.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .position-button {
+    position: absolute;
+    z-index: 5;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  $susie_face_straight: -336px 0px;
+  $susie_face-right: 0px 0px;
+  $susie_face_left: 0 -186px;
+  $susie_happy: -670px 0;
+  $susie_angry: -840px 0;
+  $susie_shadow: -336px -186px;
+
+  $susie_bounce_left: -503px -186px;
+  $susie_bounce_right: -503px 0;
+
+  $susie_offset_top: 95%;
+  $susie_offset_left: 20%;
+
+  .susie {
+    width: 104px;
+    height: 169px;
+    bottom: 2%;
+    left: 5%;
+    z-index: 2;
+    position: absolute;
+    background: url(/assets/susie-sprite-sheet.png);
+    background-position: $susie_face_straight;
+  }
+  // .grass-1 { background: url(/assets/sketch-grass.png); }
+  // .grass-2 { background: url(/assets/night-grass.png); }
+  .grass-1 {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .grass-2 {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .grass-1 {
+    z-index: 4;
+  }
+  .evergreen-1 { 
+    // background: url(/assets/night-evergreen.png); 
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+  }
+  .evergreen-2 { 
+    //background: url(/assets/evening-evergreen.png); 
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+  }
+
+  .evergreen-1,
+  .evergreen-2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-repeat: repeat;
+    height: 40%;
+    bottom: 0;
+  }
+
+  .evergreen-1 {
+    width: 90%;
+    left: 10%;
+  }
+
+  .contact-form-position {
+    position: absolute;
+    bottom: 15%;
+  }
+  .contact {
+    padding: 3em;
+    background: white;
+    border: 5px solid;
+    border-image-source: url(/assets/speech-bubble-top.png);
+    border-image-slice: 45;
+    border-image-width: 13px;
+    border-image-outset: 1;
+    border-image-repeat: stretch;
+    border-radius: 1em;
+  }
+
+
+
+
+}
