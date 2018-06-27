@@ -41,8 +41,38 @@ body.night {
   position: absolute;
   z-index: 3;
   top: 53%;
-  left: 3%;
+  left: 5%;
+  width: 104px;
 }
+
+.ledge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-image: url(/assets/ledge.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section {
+  padding: 3em;
+  background: white;
+  border: 5px solid;
+  border-image-source: url(/assets/speech-bubble-top.png);
+  border-image-slice: 45;
+  border-image-width: 13px;
+  border-image-outset: 1;
+  border-image-repeat: stretch;
+  border-radius: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .hide-on-mobile { display: none; }
+}
+
+
 
 //header layout and anything that relies on the variable header height
 header{

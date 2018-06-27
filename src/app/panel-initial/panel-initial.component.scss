@@ -2,21 +2,10 @@
 
   height: 100vh;
   position: relative;
+  padding: 100px 5% 0 5%;
 
-  .ledge {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    background-image: url(/assets/ledge.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .position-button {
-    position: absolute;
-    top: 53%;
-    left: 3%;
+  .apply-min-height {
+    min-height: 1px;
   }
 
   $susie_face_straight: -336px 0px;
@@ -50,5 +39,10 @@
       height: 268px;
       background-position: $susie_parachuting;
     }
+  }
+
+  li {
+    list-style: disc;
+    margin-left: 1em;
   }
 }

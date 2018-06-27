@@ -2,97 +2,33 @@
 
   height: 100vh;
   position: relative;
+  padding: 0 5%;
 
-  $maps: [#first, #second, #third, #fourth, #fifth];
+  .apply-min-height {
+    min-height: 1px;
+  }
 
   .data-vis-graph,
   .data-vis-graph svg {
     width: 100%;
-    ::ng-deep #first,
-    ::ng-deep #second,
-    ::ng-deep #third,
-    ::ng-deep #fourth,
-    ::ng-deep #fifth {
-      //y: 0;
-      height: 0;
-      // position: absolute;
-      // bottom: 0;
-    }
-    &:hover {
-
-      // for el in maps {
-      //   @include grow()
-      // }
-      ::ng-deep #first,
-      ::ng-deep #second,
-      ::ng-deep #third,
-      ::ng-deep #fourth,
-      ::ng-deep #fifth {
-        animation: grow 1s forwards;
-      }
+    ::ng-deep #animate-layer {
+      height: 98%;
     }
   }
 
   .data-vis-graph.start {
-    ::ng-deep #first,
-    ::ng-deep #second,
-    ::ng-deep #third,
-    ::ng-deep #fourth,
-    ::ng-deep #fifth {
+    ::ng-deep #animate-layer {
       animation: grow 1s 1s forwards;
     }
   }
 
   @keyframes grow {
-      from {
-        height: 0;
-        //y: 100%;
-      }
-      to {
-        height: 100%;
-        //y: 0;
-      }
+    from {
+      height: 98%;
     }
-  
-
-
-  .ledge {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    background-image: url(/assets/ledge.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  // .position-button {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  // }
-
-  
-
-
-    //   width: 10%;
-    // height: 25%;
-    // bottom: 48%;
-    // left: 5%;
-    // position: absolute;
-    // background: url(/assets/susie-sprite-sheet.png);
-    // background-position: -189.6% 0px;
-
-  .section {
-    padding: 3em;
-    background: white;
-    border: 5px solid;
-    border-image-source: url(/assets/speech-bubble-top.png);
-    border-image-slice: 45;
-    border-image-width: 13px;
-    border-image-outset: 1;
-    border-image-repeat: stretch;
-    border-radius: 1em;
+    to {
+      height: 0;
+    }
   }
 
 
