@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+//declare var $: any;
+declare var jquery: any;
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',

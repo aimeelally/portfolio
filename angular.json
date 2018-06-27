@@ -33,7 +33,9 @@
               },
               "src/app/global-css/base.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -85,7 +87,9 @@
               },
               "src/app/global-css/base.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets",

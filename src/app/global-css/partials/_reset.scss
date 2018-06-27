@@ -21,6 +21,10 @@ html, body {
 @viewport { 
   initial-scale: 1;
 }
+html, body {
+  height: auto;
+  min-height: 100%;
+}
 
 // http://meyerweb.com/eric/tools/css/reset/ 
 //   v2.0 | 20110126
@@ -59,11 +63,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
-  line-height: 1;
-  height: 100%;
-  overflow: overlay;
-}
+// body {
+//   line-height: 1;
+//   height: 100%;
+//   overflow: overlay;
+// }
 ol, ul {
   list-style: none;
 }

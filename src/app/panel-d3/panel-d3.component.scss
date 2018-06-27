@@ -3,6 +3,8 @@
   height: 100vh;
   position: relative;
 
+  $maps: [#first, #second, #third, #fourth, #fifth];
+
   .data-vis-graph,
   .data-vis-graph svg {
     width: 100%;
@@ -11,29 +13,47 @@
     ::ng-deep #third,
     ::ng-deep #fourth,
     ::ng-deep #fifth {
+      //y: 0;
       height: 0;
-      transform-origin: bottom;
+      // position: absolute;
+      // bottom: 0;
     }
     &:hover {
+
+      // for el in maps {
+      //   @include grow()
+      // }
       ::ng-deep #first,
       ::ng-deep #second,
       ::ng-deep #third,
       ::ng-deep #fourth,
       ::ng-deep #fifth {
         animation: grow 1s forwards;
-
       }
     }
   }
 
-  @keyframes grow {
-    from {
-      height: 0;
-    }
-    to {
-      height: 100%;
+  .data-vis-graph.start {
+    ::ng-deep #first,
+    ::ng-deep #second,
+    ::ng-deep #third,
+    ::ng-deep #fourth,
+    ::ng-deep #fifth {
+      animation: grow 1s 1s forwards;
     }
   }
+
+  @keyframes grow {
+      from {
+        height: 0;
+        //y: 100%;
+      }
+      to {
+        height: 100%;
+        //y: 0;
+      }
+    }
+  
 
 
   .ledge {

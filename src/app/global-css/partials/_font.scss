@@ -25,6 +25,6 @@ h5, h6, p { @include modular-font-size(1); }
   color: $color-alert;
 }
 
-h1, h2, h3 {
+h1 {
   font-family: $font-title;
 }
