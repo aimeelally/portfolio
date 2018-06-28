@@ -39,12 +39,12 @@ export class AppComponent implements OnInit {
       this.makeBackground(this.timeOfDay);
     }
     // 11AM - 3:59PM
-    if (11 <= currentTime&&currentTime < 16) {
+    if (11 <= currentTime&&currentTime < 18) {
       this.timeOfDay = 'day';
       this.makeBackground(this.timeOfDay);
     }
     // 4PM - 9:59PM
-    if (16 <= currentTime&&currentTime < 22) {
+    if (18 <= currentTime&&currentTime < 22) {
       this.timeOfDay = 'evening';
       this.makeBackground(this.timeOfDay);
     }

@@ -30,15 +30,13 @@ export class HeaderComponent implements OnInit {
           //moving = true;
           e.preventDefault();
 
-          animateSusie();
-
           var panel = document.querySelector(this.getAttribute('href'));
-          //debugger;
-          if(panel.id === 'contact') {
-            document.querySelector('.susie').classList.add('at-contact');
+
+          if(isSusieAtContact(panel.id)) {
+            animateSusieAtContactPanel();
           }
           else {
-            document.querySelector('.susie').classList.remove('at-contact');
+            animateSusie();
           }
 
           document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -48,7 +46,20 @@ export class HeaderComponent implements OnInit {
         //moving = false;
     });
 
+    function isSusieAtContact(location) {
+      return location === 'contact';
+    }
+
     function animateSusie() {
+      document.querySelector('.susie').classList.remove('at-contact');
+      document.querySelector('.susie').classList.add('parachuting');
+      setTimeout(function() {
+        document.querySelector('.susie').classList.remove('parachuting');
+      },500);
+    }
+
+    function animateSusieAtContactPanel() {
+      document.querySelector('.susie').classList.add('at-contact');
       document.querySelector('.susie').classList.add('parachuting');
       setTimeout(function() {
         document.querySelector('.susie').classList.remove('parachuting');
@@ -77,7 +88,7 @@ export class HeaderComponent implements OnInit {
     }
 
     // Check if it's time to start the animation.
-    function checkAnimation() {
+    function checkD3Animation() {
       var $elem = $('.data-vis-graph');
 
       // If the animation has already been started
@@ -86,23 +97,27 @@ export class HeaderComponent implements OnInit {
       }
 
       if (isElementInViewport($elem)) {
-          // Start the animation
-          $elem.addClass('start');
+        // Start the animation
+        $elem.addClass('start');
+      }
+    }
+
+    function animateScrollingSusie() {
+      var $elem = $('#contact');
+
+      if (isElementInViewport($elem)) {
+        animateSusieAtContactPanel();
+      }
+      else {
+        animateSusie();
       }
     }
 
     // Capture scroll events
     $(window).scroll(function(){
-      //debugger;
-      //if (this.moving) return;
-
-      animateSusie();
-      checkAnimation();
+      animateScrollingSusie();
+      checkD3Animation();
     });
-
-
- 
-
 
 
 

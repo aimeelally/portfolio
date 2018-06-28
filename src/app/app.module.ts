@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,8 @@ import { PanelInitialComponent } from './panel-initial/panel-initial.component';
 import { PanelContactComponent } from './panel-contact/panel-contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { PanelCaramelloCaserComponent } from './panel-caramello-caser/panel-caramello-caser.component';
+import { PanelInteractiveCvComponent } from './panel-interactive-cv/panel-interactive-cv.component';
 
 @NgModule({
   declarations: [
@@ -31,10 +34,14 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
     PanelD3Component,
     PanelFancyFormsComponent,
     PanelInitialComponent,
-    PanelContactComponent
+    PanelContactComponent,
+    PanelCaramelloCaserComponent,
+    PanelInteractiveCvComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,

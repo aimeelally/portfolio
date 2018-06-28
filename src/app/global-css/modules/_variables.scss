@@ -33,14 +33,15 @@ $color-success: #70C1B3;
 
 //******fonts******//
 
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Sacramento|Homemade+Apple|Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600|Homemade+Apple|Material+Icons');
 
 $color-font: #4a4a49;
 $font-on-light-bg: #666666;
 $font-on-dark-bg: $color-1;
 
-$font:'Lato', sans-serif;
+$font:'Raleway', sans-serif;
 $font-title: 'Homemade Apple', cursive;
+$font-subtitle: 'Raleway', sans-serif;
 
 // watermark
 $watermark: url(assets/common/watermark.svg);

@@ -19,12 +19,20 @@ h1 { @include modular-font-size(5); }
 h2 { @include modular-font-size(4); }
 h3 { @include modular-font-size(3); }
 h4 { @include modular-font-size(2); }
-h5, h6, p { @include modular-font-size(1); }
+h5, h6, p, i, u, strong, li { @include modular-font-size(1); }
 
 .error-handling{
   color: $color-alert;
 }
 
-h1 {
+h1,
+.overwrite-default-font-for-title a {
   font-family: $font-title;
+  color: $color-1;
+  text-shadow: 1px 2px $color-font;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $font-subtitle;
+  font-weight: 600;
 }

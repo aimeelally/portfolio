@@ -7,35 +7,57 @@
   <div class="grass-2"></div>
   <div class="grass-1"></div>
 
-
-  <a  class="btn-4 position-button" 
-      href="#initial">
-      <svg-icon src="assets/arrow.svg" [svgStyle]="{ 'width.px':90 }"></svg-icon>
-  </a>
-
   <div class="span-6 padding-standard md-screen center-horizontally contact-form-position">
     <div class="contact">
-      <h1>Get In Touch</h1>
-      <form ng-submit="submitContactForm()" class="fancy-input-boxes">
-        <label class="block sm-margin-bottom">Who are you?</label>
-        <input 
-          type="text" 
-          class="span-12 margin-bottom"
-          ng-model="contactForm.uname" />
+      <h2>Get In Touch</h2>
+      <form [formGroup]="contactForm" 
+            (ngSubmit)="submitContactForm()"
+            class="fancy-input-boxes">
+        <label 
+          class="block xsm-margin-bottom">
+          Who are you?
+        </label>
+        <input type="text"
+               class="span-12 margin-bottom"
+               id="username" 
+               formControlName="username" />
         
-        <label class="block sm-margin-bottom">Your email</label>
-        <input 
-          type="email" 
-          class="span-12 margin-bottom"
-          ng-model="contactForm.email" />
+        <label 
+          class="block xsm-margin-bottom">
+          Your email
+        </label>
+        <input type="email" 
+               class="span-12 margin-bottom"
+               id="email" 
+               formControlName="email" />
         
-        <label class="block sm-margin-bottom">What do you want to say?</label>
-        <textarea 
-          type="text"  
-          class="span-12 margin-bottom"
-          ng-model="contactForm.message">
+        <label 
+          class="block xsm-margin-bottom">
+          What do you want to say?
+        </label>
+        <textarea type="text"  
+                  class="span-12 margin-bottom"
+                  id="message" 
+                  formControlName="message">
         </textarea>
-        <button class="btn-1 center-horizontally" type="submit">Submit</button>
+
+        <div *ngIf="email.touched && email.errors">
+          <div class="error-handling" *ngIf="email.errors.required">
+            The email is required
+          </div>
+        </div>
+        <div *ngIf="email.errors">
+            <div class="error-handling" *ngIf="email.errors.pattern">
+                The email is not valid
+            </div>
+        </div>
+
+        <button 
+          class="btn-1 center-horizontally" 
+          [disabled]="!contactForm.valid"
+          type="submit">
+          Submit
+        </button>
       </form>
     </div>
   </div>
