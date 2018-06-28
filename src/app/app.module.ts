@@ -24,6 +24,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { PanelCaramelloCaserComponent } from './panel-caramello-caser/panel-caramello-caser.component';
 import { PanelInteractiveCvComponent } from './panel-interactive-cv/panel-interactive-cv.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-//import { ContactService } from '../contact.service'; 
+import { ContactService } from '../contact.service'; 
 
 @Component({
   selector: 'app-panel-contact',
@@ -9,7 +9,7 @@ import { FormGroup, FormControl, Validators } from "@angular/forms";
 })
 export class PanelContactComponent {
 
-  //constructor(private contactService: ContactService){};
+  constructor(private contactService: ContactService){};
 
   contactForm = new FormGroup({
     username: new FormControl("", [Validators.required]),
@@ -27,7 +27,7 @@ export class PanelContactComponent {
 
   submitContactForm(){
     //debugger;
-    //this.contactService.sendMessage(JSON.stringify(this.contactForm.value));
+    this.contactService.sendMessage(JSON.stringify(this.contactForm.value));
     console.log(JSON.stringify(this.contactForm.value));
     //alert("The form was submitted");
     this.contactForm.reset();
