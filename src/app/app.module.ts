@@ -9,6 +9,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
+// import { AWS } from 'aws-sdk/dist/aws-sdk.min.js';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTabsModule } from '@angular/material';
 
 import { HomeComponent } from './home/home.component';
@@ -47,6 +48,7 @@ import { PanelInteractiveCvComponent } from './panel-interactive-cv/panel-intera
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
     LayoutModule,
+    //AWS,
     HttpClientModule, 
     AngularSvgIconModule,
     MatToolbarModule,

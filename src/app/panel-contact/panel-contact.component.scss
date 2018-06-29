@@ -1,19 +1,6 @@
 .panel.contact {
 
-  height: 100vh;
-  position: relative;
-
-  .ledge {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    background-image: url(/assets/ledge.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
+  margin-bottom: 0;
   .position-button {
     position: absolute;
     z-index: 5;

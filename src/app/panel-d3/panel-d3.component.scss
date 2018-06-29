@@ -1,13 +1,5 @@
 .panel.d3 {
 
-  height: 100vh;
-  position: relative;
-  padding: 0 5%;
-
-  .apply-min-height {
-    min-height: 1px;
-  }
-
   .data-vis-graph,
   .data-vis-graph svg {
     width: 100%;

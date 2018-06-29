@@ -12,13 +12,13 @@ body.morning {
   background: $med-blue;
   background: radial-gradient(circle at bottom, $med-yellow, $med-blue);
   .grass-2 { background: url(/assets/morning-grass.png); }
-  .evergreen-1 { background: url(/assets/day-evergreen.png); }
-  .evergreen-2 { background: url(/assets/morning-evergreen.png); }
+  .evergreen-1 { background: url(/assets/morning-evergreen.png); }
+  .evergreen-2 { background: url(/assets/day-evergreen.png); }
   .stars-clouds { background: url(/assets/morning-clouds.png); }
 }
 body.day {
   background: $med-blue;
-  background: linear-gradient($med-blue, $light-blue);
+  background: linear-gradient(darken($med-blue, 10%), lighten($med-blue, 5%));
   .grass-2 { background: url(/assets/day-grass.png); }
   .evergreen-1 { background: url(/assets/day-evergreen.png); }
   .evergreen-2 { background: url(/assets/night-evergreen.png); }
@@ -60,6 +60,17 @@ body.night {
   background-size: contain;
 }
 
+.panel {
+  //height: 100vh;
+  position: relative;
+  padding: 100px 5% 0 5%;
+  margin-bottom: 20%;
+}
+
+.apply-min-height {
+  min-height: 1px;
+}
+
 .section {
   padding: 3em;
   background: white;
@@ -83,6 +94,11 @@ body.night {
 
 @media screen and (max-width: 800px) {
   .hide-on-mobile { display: none; }
+  .panel { min-height: 100vh; }
+}
+
+@media screen and (min-width: 801px) {
+  .panel { height: 100vh; }
 }
 
 
