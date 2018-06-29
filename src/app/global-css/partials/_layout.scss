@@ -28,7 +28,7 @@ body.day {
 }
 body.evening {
   background: $med-orange;
-  background: radial-gradient(circle at bottom, lighten($med-orange, 5%), $med-purple);
+  background: radial-gradient(circle at bottom, lighten($med-orange, 5%), $med-purple, $med-purple, $med-purple, $dark-purple);
   .grass-2 { background: url(/assets/evening-grass.png); }
   .hill { background: url(/assets/evening-hill.png); }
   .evergreen-1 { background: url(/assets/night-evergreen.png); }
