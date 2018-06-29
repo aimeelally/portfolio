@@ -1,19 +1,6 @@
 .panel.contact {
 
-  height: 100vh;
-  position: relative;
-
-  .ledge {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    background-image: url(/assets/ledge.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
+  margin-bottom: 0;
   .position-button {
     position: absolute;
     z-index: 5;
@@ -64,15 +51,9 @@
   .grass-1 {
     z-index: 4;
   }
-  .evergreen-1 { 
-    // background: url(/assets/night-evergreen.png); 
-    background-repeat-x: repeat;
-    background-repeat-y: no-repeat;
-    background-position-y: 100%;
-    background-size: contain;
-  }
-  .evergreen-2 { 
-    //background: url(/assets/evening-evergreen.png); 
+  .evergreen-1,
+  .evergreen-2,
+  .hill {  
     background-repeat-x: repeat;
     background-repeat-y: no-repeat;
     background-position-y: 100%;
@@ -80,18 +61,23 @@
   }
 
   .evergreen-1,
-  .evergreen-2 {
+  .evergreen-2,
+  .hill {
     position: absolute;
     left: 0;
     width: 100%;
-    background-repeat: repeat;
+    //background-repeat: repeat;
     height: 40%;
     bottom: 0;
   }
 
-  .evergreen-1 {
-    width: 90%;
-    left: 10%;
+  .evergreen-2 {
+    width: 85%;
+    left: 15%;
+  }
+
+  .hill {
+    height: 100%;
   }
 
   .contact-form-position {

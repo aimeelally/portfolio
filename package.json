@@ -25,6 +25,7 @@
     "@angular/router": "^6.0.7",
     "@angular/service-worker": "^6.0.7",
     "angular-svg-icon": "^6.0.0",
+    "aws-sdk": "^2.266.1",
     "core-js": "^2.5.4",
     "jquery": "^3.3.1",
     "rxjs": "^6.0.0",

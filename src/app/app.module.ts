@@ -9,11 +9,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
+// import { AWS } from 'aws-sdk/dist/aws-sdk.min.js';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTabsModule } from '@angular/material';
 
 import { HomeComponent } from './home/home.component';
-import { MaterialNavComponent } from './material-nav/material-nav.component';
-import { MatDashboardComponent } from './mat-dashboard/mat-dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { PanelD3Component } from './panel-d3/panel-d3.component';
 import { PanelFancyFormsComponent } from './panel-fancy-forms/panel-fancy-forms.component';
@@ -29,8 +28,6 @@ import { PanelInteractiveCvComponent } from './panel-interactive-cv/panel-intera
   declarations: [
     AppComponent,
     HomeComponent,
-    MaterialNavComponent,
-    MatDashboardComponent,
     HeaderComponent,
     PanelD3Component,
     PanelFancyFormsComponent,
@@ -47,6 +44,7 @@ import { PanelInteractiveCvComponent } from './panel-interactive-cv/panel-intera
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
     LayoutModule,
+    //AWS,
     HttpClientModule, 
     AngularSvgIconModule,
     MatToolbarModule,

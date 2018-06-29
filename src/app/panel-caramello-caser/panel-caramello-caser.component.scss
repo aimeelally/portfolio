@@ -1,11 +1,7 @@
 .panel.caramello-caser {
 
-  height: 100vh;
-  position: relative;
-  padding: 0 5%;
-
-  .apply-min-height {
-    min-height: 1px;
+  .back-shadow {
+    box-shadow: 0 0 10px $color-1;
   }
 
 }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import * as AWS from "aws-sdk";
 
 
 @Injectable({
@@ -8,24 +9,29 @@ import { Injectable } from '@angular/core';
 export class ContactService {
 
   sendMessage(form) {
+
+    console.log('WHY WON\'T YOU WORK');
     
     var LPAWS = {};
 
-    // Initialize the Amazon Cognito credentials provider
+    // // Initialize the Amazon Cognito credentials provider
     AWS.config.region = 'us-east-1'; // Region
     
+
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
         IdentityPoolId: 'us-east-1:54c6da73-e1de-481f-ad08-c29c7b3401b9',
     });
 
-    AWS.config.credentials.get(function(err) {
-      if (err) {
-        console.log('1: '+err);  // an error occurred
-      }
-      else {
-        //console.log('2: '+AWS.config.credentials); // successful response
-      }
-    });
+    if (AWS.config.credentials instanceof AWS.Credentials) {
+      AWS.config.credentials.get(function (err) {
+        if (err) {
+          console.log('1: ' + err);  // an error occurred
+        }
+        else {
+          //console.log('2: '+AWS.config.credentials); // successful response
+        }
+      });
+    }
 
     var sns = new AWS.SNS();
     var params = {
@@ -44,5 +50,6 @@ export class ContactService {
         //console.log('4: '+data); // successful response
       }     
     });
+
   } 
 }
