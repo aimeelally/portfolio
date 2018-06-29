@@ -50,7 +50,8 @@ $my-app-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
         'partials/font',
         'partials/speech-bubbles';
 
-@import '../header/header.component.scss';
+@import '../header/header.component.scss',
+        '../panel-caramello-caser/panel-caramello-caser.component.scss';
 
 
 // DIRECTIVES

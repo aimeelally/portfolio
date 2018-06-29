@@ -12,6 +12,7 @@ body.morning {
   background: $med-blue;
   background: radial-gradient(circle at bottom, $med-yellow, $med-blue);
   .grass-2 { background: url(/assets/morning-grass.png); }
+  .hill { background: url(/assets/morning-hill.png); }
   .evergreen-1 { background: url(/assets/morning-evergreen.png); }
   .evergreen-2 { background: url(/assets/day-evergreen.png); }
   .stars-clouds { background: url(/assets/morning-clouds.png); }
@@ -20,14 +21,16 @@ body.day {
   background: $med-blue;
   background: linear-gradient(darken($med-blue, 10%), lighten($med-blue, 5%));
   .grass-2 { background: url(/assets/day-grass.png); }
-  .evergreen-1 { background: url(/assets/day-evergreen.png); }
-  .evergreen-2 { background: url(/assets/night-evergreen.png); }
+  .hill { background: url(/assets/day-hill.png); }
+  .evergreen-1 { background: url(/assets/night-evergreen.png); }
+  .evergreen-2 { background: url(/assets/day-evergreen.png); }
   .stars-clouds { background: url(/assets/day-clouds.png); }
 }
 body.evening {
   background: $med-orange;
   background: radial-gradient(circle at bottom, lighten($med-orange, 5%), $med-purple);
   .grass-2 { background: url(/assets/evening-grass.png); }
+  .hill { background: url(/assets/evening-hill.png); }
   .evergreen-1 { background: url(/assets/night-evergreen.png); }
   .evergreen-2 { background: url(/assets/evening-evergreen.png); }
   .stars-clouds { background: url(/assets/evening-stars.png); }
@@ -36,6 +39,7 @@ body.night {
   background: $med-purple;
   background: linear-gradient($dark-purple, $med-purple);
   .grass-2 { background: url(/assets/night-grass.png); }
+  .hill { background: url(/assets/night-hill.png); }
   .evergreen-1 { background: url(/assets/evening-evergreen.png); }
   .evergreen-2 { background: url(/assets/night-evergreen.png); }
   .stars-clouds { background: url(/assets/night-stars.png); }
