@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import * as AWS from "aws-sdk";
 
 
 @Injectable({
@@ -18,7 +19,7 @@ export class ContactService {
         IdentityPoolId: 'us-east-1:54c6da73-e1de-481f-ad08-c29c7b3401b9',
     });
 
-    AWS.config.credentials.get(function(err) {
+    AWS.config.credentialProvider.get(function(err) {
       if (err) {
         console.log('1: '+err);  // an error occurred
       }
