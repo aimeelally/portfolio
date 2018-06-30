@@ -1,0 +1,30 @@
+#PAGE-fancy-forms {
+  .table-container {
+    padding: 100px 5% 5% 5%;
+  }
+  table {
+    background: white;
+    border: 5px solid;
+    border-image-source: url(/assets/speech-bubble-top.png);
+    border-image-slice: 45;
+    border-image-width: 13px;
+    border-image-outset: 1;
+    border-image-repeat: stretch;
+  }
+  td, th {
+    padding: 1em;
+  }
+  td, th {
+    border-bottom: 6px solid;
+    border-image-source: url(/assets/table-border.png);
+    border-image-slice: 45;
+  }
+  th {
+    font-weight: bold;
+  }
+  tr:last-of-type td {
+    border: 0; 
+  }
+
+
+}

@@ -1,0 +1,235 @@
+<div id="PAGE-fancy-forms">
+
+  <div class="app-header span-12">
+
+    <h1 class=" make-h1-bigger 
+                inline-block
+                overwrite-default-font-for-title">
+      <a routerLink="/home">Aimée Lally</a>
+    </h1>
+
+  </div>
+
+
+
+  <div class="table-container 
+              fancy-input-boxes
+              fancy-radio-buttons
+              fancy-checkboxes">
+
+
+    <h2 class="center-text xlg-margin-bottom">Fancy Forms</h2>
+
+
+    <table>
+      
+      <tr>
+        <th>TYPE</th>
+        <th>INITIAL</th>
+        <th>DISABLED</th>
+      </tr>
+
+      <tr>
+        <td>Text</td>
+        <td><input type="text" /></td>
+        <td><input type="text" disabled /></td>
+      </tr>
+      <tr>
+        <td>Date</td>
+        <td><input type="date" /></td>
+        <td>
+          <input type="date" disabled />
+        </td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" /></td>
+        <td><input type="email" disabled /></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="password" /></td>
+        <td><input type="password" disabled /></td>
+      </tr>
+      <tr>
+        <td>Search</td>
+        <td><input type="search" /></td>
+        <td><input type="search" disabled /></td>
+      </tr>
+      <tr>
+        <td>Number</td>
+        <td><input type="number" /></td>
+        <td><input type="number" disabled /></td>
+      </tr>
+      <tr>
+        <td>Range</td>
+        <td><input type="range" /></td>
+        <td><input type="range" disabled /></td>
+      </tr>
+      <tr>
+        <td>Checkbox</td>
+        <td>
+          <input type="checkbox" 
+                 id="c1" 
+                 checked />
+          <label for="c1"></label>
+          <label for="c1">Label</label>
+        </td>
+        <td>
+          <input type="checkbox" 
+                 id="c2" 
+                 name="ff-checkbox"
+                 disabled />
+          <label for="c2"></label>
+          <label for="c2">Label</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Radio</td>
+        <td>
+          <input type="radio" 
+                 id="r1" 
+                 name="ff-radio" />
+          <label for="r1">Label</label>
+        </td>
+        <td>
+          <input type="radio" 
+                 id="r2" 
+                 name="ff-radio"
+                 disabled />
+          <label for="r2">Label</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Checkboxes with Images</td>
+        <td>
+          <div id="checkbox-container" 
+               class="fancy-checkboxes 
+                      with-image">
+            <span class="image-container">
+              <input type="checkbox" 
+                     id="ci1" 
+                     name="ff-checkbox"
+                     checked />
+              <label for="ci1"></label>
+              <label for="ci1">
+                <img src="assets/evening-evergreen.png" 
+                     alt="" />
+              </label>
+              <label for="ci1" class="image-bg"></label>
+            </span>
+          </div>
+        </td>
+
+        <td>
+          <div id="checkbox-container" 
+               class="fancy-checkboxes 
+                      with-image">
+            <span class="image-container">
+              <input type="checkbox" 
+                     id="ci2" 
+                     name="ff-checkbox"
+                     disabled />
+              <label for="ci2"></label>
+              <label for="ci2">
+                <img src="assets/morning-evergreen.png" 
+                     alt="" />
+              </label>
+              <label for="ci2" class="image-bg"></label>
+            </span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Radio Buttons with Images</td>
+        <td>
+          <div class="fancy-radio-buttons 
+                      with-image">
+            <span class="image-container">
+              <input type="radio" 
+                     id="ri1" 
+                     name="ff-radiobuttons" />
+              <label for="ri1">
+                <img src="assets/day-evergreen.png" 
+                     alt="" />
+              </label>
+              <label for="ri1" class="image-bg"></label>
+            </span>
+          </div>
+        </td>
+
+        <td>
+          <div class="fancy-radio-buttons 
+                      with-image">
+            <span class="image-container">
+              <input type="radio" 
+                     id="ri2" 
+                     name="ff-radiobuttons"
+                     disabled />
+              <label for="ri2">
+                <img src="assets/night-evergreen.png" 
+                     alt="" />
+              </label>
+              <label for="ri2" class="image-bg"></label>
+            </span>
+          </div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>Textarea</td>
+        <td><textarea></textarea></td>
+        <td><textarea disabled></textarea></td>
+      </tr>
+      <tr>
+        <td>Color</td>
+        <td><input type="color" /></td>
+        <td><input type="color" disabled /></td>
+      </tr>
+
+
+      <tr>
+        <td>Select box</td>
+        <td>
+          <div class="fancy-select-boxes select-box-container">
+            <select>
+              <option value="opt1">
+                Option 1 
+              </option>
+              <option value="opt2">
+                Option 2
+              </option>
+              <option value="opt3">
+                Option 3
+              </option>
+            </select>
+            <div class="select-box-background"></div>
+            <div class="chevron"></div>
+          </div>
+        </td>
+        <td>
+          <div class="fancy-select-boxes select-box-container">
+            <select disabled>
+              <option value="opt1">
+                Option 1 
+              </option>
+              <option value="opt2">
+                Option 2
+              </option>
+              <option value="opt3">
+                Option 3
+              </option>
+            </select>
+            <div class="select-box-background"></div>
+            <div class="chevron"></div>
+          </div>
+        </td>
+      </tr>
+      
+    </table>
+  </div>
+
+</div>

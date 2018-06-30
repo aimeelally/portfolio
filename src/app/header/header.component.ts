@@ -51,6 +51,9 @@ export class HeaderComponent implements OnInit {
     }
 
     function animateSusie() {
+      if (!document.querySelector('.susie')) {
+        return;
+      }
       document.querySelector('.susie').classList.remove('at-contact');
       document.querySelector('.susie').classList.add('parachuting');
       setTimeout(function() {
@@ -59,6 +62,9 @@ export class HeaderComponent implements OnInit {
     }
 
     function animateSusieAtContactPanel() {
+      if (!document.querySelector('.susie')) {
+        return;
+      }
       document.querySelector('.susie').classList.add('at-contact');
       document.querySelector('.susie').classList.add('parachuting');
       setTimeout(function() {
@@ -80,11 +86,13 @@ export class HeaderComponent implements OnInit {
       var viewportBottom = viewportTop + $(window).height();
 
       // Get the position of the element on the page.
-      var elemTop = Math.round( $elem.offset().top );
-      var elemBottom = elemTop + $elem.height();
-      //debugger;
+      if($elem.length) {
+        var elemTop = Math.round( $elem.offset().top );
+        var elemBottom = elemTop + $elem.height();
+        //debugger;
 
-      return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+        return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+      }
     }
 
     // Check if it's time to start the animation.
@@ -103,7 +111,7 @@ export class HeaderComponent implements OnInit {
     }
 
     function animateScrollingSusie() {
-      var $elem = $('#contact');
+      var $elem = $('.grass-1');
 
       if (isElementInViewport($elem)) {
         animateSusieAtContactPanel();
