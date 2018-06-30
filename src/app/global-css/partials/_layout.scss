@@ -71,6 +71,11 @@ body.night {
   margin-bottom: 20%;
 }
 
+.evening .text-on-dark-bg,
+.night .text-on-dark-bg {
+  color: $color-1;
+}
+
 .apply-min-height {
   min-height: 1px;
 }
