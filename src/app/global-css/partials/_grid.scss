@@ -1,3 +1,10 @@
+$num-zindex: 10;
+@for $i from 1 through $num-zindex {
+  .z-index-#{$i} { 
+    z-index: $i;
+  }
+}
+
 @for $i from 1 through $grid-columns {
   .span-#{$i} { 
     width: 100% / $grid-columns * $i;

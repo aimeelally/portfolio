@@ -25,7 +25,7 @@
         
         <label 
           class="block xsm-margin-bottom">
-          Your email
+          What's your email?
         </label>
         <input type="email" 
                class="span-12 margin-bottom"
@@ -44,12 +44,12 @@
 
         <div *ngIf="email.touched && email.errors">
           <div class="error-handling" *ngIf="email.errors.required">
-            The email is required
+            You have to put in an email. My carrier pidgeons are dead.
           </div>
         </div>
         <div *ngIf="email.errors">
             <div class="error-handling" *ngIf="email.errors.pattern">
-                The email is not valid
+              Did you just enter a dud email?
             </div>
         </div>
 

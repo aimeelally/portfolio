@@ -24,7 +24,9 @@
     z-index: 999;
     background: url(/assets/susie-sprite-sheet.png);
     background-position: $susie_happy;
+    transition: bottom 1s ease;
     &.at-contact {
+      //transition: bottom 1s ease;
       bottom: 1%;
       z-index: 1;
     }

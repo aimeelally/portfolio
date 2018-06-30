@@ -28,7 +28,7 @@ body.day {
 }
 body.evening {
   background: $med-orange;
-  background: radial-gradient(circle at bottom, lighten($med-orange, 5%), $med-purple);
+  background: radial-gradient(circle at bottom, lighten($med-orange, 5%), $med-purple, $med-purple, $med-purple, $dark-purple);
   .grass-2 { background: url(/assets/evening-grass.png); }
   .hill { background: url(/assets/evening-hill.png); }
   .evergreen-1 { background: url(/assets/night-evergreen.png); }
@@ -69,6 +69,11 @@ body.night {
   position: relative;
   padding: 100px 5% 0 5%;
   margin-bottom: 20%;
+}
+
+.evening .text-on-dark-bg,
+.night .text-on-dark-bg {
+  color: $color-1;
 }
 
 .apply-min-height {

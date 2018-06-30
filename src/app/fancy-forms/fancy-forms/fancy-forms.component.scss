@@ -1,0 +1,94 @@
+#PAGE-fancy-forms {
+
+  position: relative;
+  height: 100%;
+
+  .page-padding {
+    padding: 100px 5% 5% 5%;
+  }
+  .table-container {
+    background: white;
+    margin-bottom: 200px;
+    padding: 5%;
+    border: 5px solid;
+    border-image-source: url(/assets/speech-bubble-top.png);
+    border-image-slice: 45;
+    border-image-width: 13px;
+    border-image-outset: 1;
+    border-image-repeat: stretch;
+  }
+  td, th {
+    padding: 1em;
+  }
+  td, th {
+    border-bottom: 6px solid;
+    border-image-source: url(/assets/table-border.png);
+    border-image-slice: 45;
+  }
+  th {
+    font-weight: bold;
+  }
+  tr:last-of-type td {
+    border: 0; 
+  }
+  tr > td:first-of-type {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  input:not([type="color"]):not([type="radio"]):not([type="checkbox"]),
+  textarea,
+  select {
+    width: 100%;
+  }
+
+
+
+  .grass-1 {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .grass-2 {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .grass-1 {
+    z-index: 4;
+  }
+  .evergreen-1,
+  .evergreen-2,
+  .hill {  
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+  }
+
+  .evergreen-1,
+  .evergreen-2,
+  .hill {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    //background-repeat: repeat;
+    height: 10%;
+    bottom: 0;
+  }
+
+  .evergreen-2 {
+    width: 85%;
+    left: 15%;
+  }
+
+  .hill {
+    height: 100%;
+  }
+
+}
