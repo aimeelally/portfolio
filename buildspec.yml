@@ -4,7 +4,7 @@ env:
         CACHE_CONTROL: "86400"
         S3_BUCKET: "codepipeline-eu-west-1-581265909977"
         BUILD_FOLDER: "dist"
-        BUILD_ENV: "dev"
+        BUILD_ENV: "prod"
 phases:
     install:
         runtime-versions:
