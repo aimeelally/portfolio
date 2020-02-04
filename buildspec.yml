@@ -2,7 +2,7 @@ version: 0.2
 env:
     variables:
         CACHE_CONTROL: "86400"
-        S3_BUCKET: "portfolio-dev-build"
+        S3_BUCKET: "http://portfolio-dev-build.s3-website-eu-west-1.amazonaws.com"
         BUILD_FOLDER: "dev-build"
         BUILD_ENV: "dev"
 phases:
